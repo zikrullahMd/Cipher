@@ -54,7 +54,6 @@ public class Main{
 		}else {
 			n = sqrRt(getCode(s.length()));
 		}
-		System.out.println("n "+n);
 		char[][] mat = new char[n][n];
 		int k = 0;
 		for(int i = 0;i<n;i++) {
