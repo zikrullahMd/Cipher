@@ -16,7 +16,8 @@ public class Main{
 	
 	public static void encode() {
 		Scanner in = new Scanner(System.in);
-		String s = in.next();
+		String s = in.nextLine();
+		s = s.trim();
 		int sq = sqrRt(s.length());
 		char[][] mat;
 		int n;
@@ -44,8 +45,16 @@ public class Main{
 	
 	public static void decode() {
 		Scanner in = new Scanner(System.in);
-		String s = in.next();
-		int n = sqrRt(s.length());
+		String s = in.nextLine();
+		s = s.trim();
+		int sq = sqrRt(s.length());
+		int n;
+		if(s.length()==sq*sq) {
+			n = sqrRt(s.length());
+		}else {
+			n = sqrRt(getCode(s.length()));
+		}
+		System.out.println("n "+n);
 		char[][] mat = new char[n][n];
 		int k = 0;
 		for(int i = 0;i<n;i++) {
