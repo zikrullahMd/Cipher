@@ -9,8 +9,8 @@ public class Main{
 		System.out.println("Enter 2 to Decode");
 		int com = in.nextInt();
 		switch(com) {
-		case 1 : encode();
-		case 2 : decode();
+			case 1 : encode();
+			case 2 : decode();
 		}
 	}
 	
@@ -81,12 +81,6 @@ public class Main{
 					mat[i][j] = '.';
 			}
 		}
-//		if(s.length()==n*n) return mat;
-//		for(;i<n;i++) {
-//			for(;j<n;j++) {
-//				mat[i][j] = '.';
-//			}
-//		}
 		
 		return mat;
 	}
